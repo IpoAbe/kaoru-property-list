@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>開成町周辺 中古戸建て候補リスト</title>
+  <meta name="description" content="開成町・南足柄市・山北町周辺で、庭付き・駐車2台・2,000万円以内を中心に整理した中古戸建て候補リストです。">
+  <style>
+    :root {
+      --background: #f7f4ee;
+      --foreground: #1f2933;
+      --ink-muted: #5f6c75;
+      --line: #d8d1c4;
+      --paper: #fffdf8;
+      --orange: #e8691a;
+      --blue: #32667a;
+      --green: #58744d;
+      --red: #a04432;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--foreground);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
+      gap: 32px;
+      align-items: end;
+      padding: 56px clamp(20px, 5vw, 72px) 36px;
+      background: linear-gradient(135deg, rgba(232,105,26,.13), transparent 36%), linear-gradient(115deg, rgba(50,102,122,.14), transparent 44%), var(--paper);
+      border-bottom: 1px solid var(--line);
+    }
+    h1, h2, h3, h4, p { margin-top: 0; }
+    h1 {
+      font-size: clamp(34px, 6vw, 62px);
+      line-height: 1.05;
+      letter-spacing: 0;
+      margin-bottom: 18px;
+      max-width: 820px;
+    }
+    h2 { font-size: 26px; letter-spacing: 0; }
+    h3 { font-size: 22px; line-height: 1.3; margin-bottom: 0; }
+    h4 { font-size: 14px; margin-bottom: 8px; }
+    .eyebrow { color: var(--orange); font-size: 13px; font-weight: 700; margin-bottom: 10px; }
+    .hero p:last-child, .section-lead p, footer p { color: var(--ink-muted); line-height: 1.8; margin-bottom: 0; }
+    .hero p:last-child { font-size: 17px; max-width: 760px; }
+    .summary { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .summary span { border: 1px solid var(--line); background: rgba(255,253,248,.8); padding: 12px; font-size: 13px; font-weight: 700; }
+    .map-band { height: 260px; border-bottom: 1px solid var(--line); background: #e7e3d8; }
+    .map-band iframe { width: 100%; height: 100%; border: 0; filter: saturate(.88); }
+    .content, .next-step, footer { padding: 38px clamp(20px, 5vw, 72px); }
+    .section-lead { display: grid; grid-template-columns: minmax(220px, 320px) minmax(0, 1fr); gap: 24px; align-items: start; margin-bottom: 24px; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .property { background: var(--paper); border: 1px solid var(--line); border-top: 5px solid var(--blue); padding: 20px; }
+    .rank-a { border-top-color: var(--orange); }
+    .rank-b { border-top-color: var(--green); }
+    .rank-c { border-top-color: var(--blue); }
+    .property-head { display: flex; justify-content: space-between; gap: 16px; align-items: start; border-bottom: 1px solid var(--line); padding-bottom: 14px; margin-bottom: 14px; }
+    .property-head strong { color: var(--red); font-size: 22px; white-space: nowrap; }
+    .rank { display: inline-block; color: var(--ink-muted); font-size: 12px; font-weight: 700; margin-bottom: 6px; }
+    .facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin: 0 0 18px; }
+    .facts div { min-width: 0; }
+    dt { color: var(--ink-muted); font-size: 12px; font-weight: 700; }
+    dd { margin: 3px 0 0; line-height: 1.5; }
+    .notes { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    ul, ol { margin: 0; padding-left: 1.25em; }
+    li { line-height: 1.65; margin-bottom: 4px; }
+    a { color: var(--blue); display: inline-block; font-weight: 700; margin-top: 18px; text-underline-offset: 3px; }
+    .next-step { background: #ebe7de; border-block: 1px solid var(--line); }
+    .next-step ol { max-width: 980px; }
+    footer { background: var(--paper); }
+    @media (max-width: 900px) {
+      .hero, .section-lead, .grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 36px; }
+    }
+    @media (max-width: 620px) {
+      .summary, .facts, .notes { grid-template-columns: 1fr; }
+      .property-head { display: block; }
+      .property-head strong { display: block; margin-top: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">2026年9月2日確認</p>
+        <h1>開成町周辺 中古戸建て候補リスト</h1>
+        <p>庭付き・車2台・リフォーム費用を考えて2,000万円以内を中心に、開成町、南足柄市、山北町から候補を整理しました。</p>
+      </div>
+      <div class="summary" aria-label="検索条件">
+        <span>第一希望: 開成町</span>
+        <span>優先: 南足柄市・山北町</span>
+        <span>理想: 2,000万円以内</span>
+        <span>庭・駐車2台</span>
+      </div>
+    </section>
+    <section class="map-band" aria-label="対象エリア地図">
+      <iframe title="開成町周辺地図" src="https://www.openstreetmap.org/export/embed.html?bbox=139.023%2C35.290%2C139.165%2C35.390&layer=mapnik&marker=35.336%2C139.123" loading="lazy"></iframe>
+    </section>
+    <section class="content">
+      <div class="section-lead">
+        <h2>候補一覧</h2>
+        <p>掲載状況は変わるため、案内前にレインズ・元掲載・担当会社への在庫確認が必要です。「線路あり」は意味が不明確なため、外に出やすい動線・道路付けとして確認項目にしています。</p>
+      </div>
+      <div class="grid">
+        <article class="property rank-a"><div class="property-head"><div><span class="rank">優先度A</span><h3>開成町延沢</h3></div><strong>1,700万円</strong></div><dl class="facts"><div><dt>間取り</dt><dd>3LDK</dd></div><div><dt>交通</dt><dd>新松田駅バス5分・開成小学校バス停徒歩5分</dd></div><div><dt>土地</dt><dd>320.03m²</dd></div><div><dt>建物</dt><dd>85.94m²</dd></div><div><dt>築年月</dt><dd>1969年1月</dd></div></dl><div class="notes"><div><h4>優先して確認</h4><ul><li>開成小学校まで約360m</li><li>南庭あり</li><li>価格にリフォーム余地</li></ul></div><div><h4>確認ポイント</h4><ul><li>駐車台数は車種確認</li><li>築年数が古いため改修費確認</li></ul></div></div><a href="https://house.goo.ne.jp/buy/uh/special/3013/area_kanagawa/14366.html" target="_blank" rel="noreferrer">元掲載を確認する（goo住宅・不動産）</a></article>
+        <article class="property rank-a"><div class="property-head"><div><span class="rank">優先度A</span><h3>南足柄市和田河原</h3></div><strong>1,980万円</strong></div><dl class="facts"><div><dt>間取り</dt><dd>4LDK</dd></div><div><dt>交通</dt><dd>和田河原駅徒歩9分</dd></div><div><dt>土地</dt><dd>133.98m²</dd></div><div><dt>建物</dt><dd>99.78m²</dd></div><div><dt>築年月</dt><dd>2018年9月</dd></div></dl><div class="notes"><div><h4>優先して確認</h4><ul><li>築浅寄り</li><li>駐車2台</li><li>生活圏が開成町に近い</li></ul></div><div><h4>確認ポイント</h4><ul><li>庭の広さ確認</li><li>契約不適合責任免責の内容確認</li></ul></div></div><a href="https://house.goo.ne.jp/buy/uh/special/3013/area_kanagawa/14217.html" target="_blank" rel="noreferrer">元掲載を確認する（goo住宅・不動産）</a></article>
+        <article class="property rank-a"><div class="property-head"><div><span class="rank">優先度A</span><h3>山北町岸</h3></div><strong>2,000万円</strong></div><dl class="facts"><div><dt>間取り</dt><dd>4LDK</dd></div><div><dt>交通</dt><dd>山北駅・東山北駅徒歩23分</dd></div><div><dt>土地</dt><dd>168.68m²</dd></div><div><dt>建物</dt><dd>94.77m²</dd></div><div><dt>築年月</dt><dd>2021年12月</dd></div></dl><div class="notes"><div><h4>優先して確認</h4><ul><li>築浅</li><li>車種により3台駐車可</li><li>南道路</li></ul></div><div><h4>確認ポイント</h4><ul><li>開成小通学との相性</li><li>2,000万円ちょうどで諸費用・リフォーム費確認</li></ul></div></div><a href="https://house.goo.ne.jp/buy/uh/special/3013/area_kanagawa/14364/013.html" target="_blank" rel="noreferrer">元掲載を確認する（goo住宅・不動産）</a></article>
+        <article class="property rank-b"><div class="property-head"><div><span class="rank">優先度B</span><h3>開成町宮台</h3></div><strong>1,750万円</strong></div><dl class="facts"><div><dt>間取り</dt><dd>4LDK</dd></div><div><dt>交通</dt><dd>開成駅徒歩22分</dd></div><div><dt>土地</dt><dd>277.68m²</dd></div><div><dt>建物</dt><dd>122.9m²</dd></div><div><dt>築年月</dt><dd>1966年12月</dd></div></dl><div class="notes"><div><h4>条件次第で有力</h4><ul><li>開成町内</li><li>駐車2台</li><li>土地が広い</li></ul></div><div><h4>確認ポイント</h4><ul><li>築年数が古いため耐震・水回り確認</li><li>庭と駐車動線の現地確認</li></ul></div></div><a href="https://house.goo.ne.jp/buy/uh/special/3013/area_kanagawa/14366.html" target="_blank" rel="noreferrer">元掲載を確認する（goo住宅・不動産）</a></article>
+        <article class="property rank-b"><div class="property-head"><div><span class="rank">優先度B</span><h3>南足柄市三竹</h3></div><strong>1,800万円</strong></div><dl class="facts"><div><dt>間取り</dt><dd>4LDK</dd></div><div><dt>交通</dt><dd>相模沼田駅徒歩12分</dd></div><div><dt>土地</dt><dd>110.02m²</dd></div><div><dt>建物</dt><dd>82.39m²</dd></div><div><dt>築年月</dt><dd>2013年1月</dd></div></dl><div class="notes"><div><h4>条件次第で有力</h4><ul><li>駐車3台</li><li>築年数と価格のバランス</li><li>開成方面へ出やすい</li></ul></div><div><h4>確認ポイント</h4><ul><li>庭スペース確認</li><li>居住中のため内見調整</li></ul></div></div><a href="https://house.goo.ne.jp/buy/uh/special/3013/area_kanagawa/14217.html" target="_blank" rel="noreferrer">元掲載を確認する（goo住宅・不動産 / LIFULL HOME’S）</a></article>
+        <article class="property rank-b"><div class="property-head"><div><span class="rank">優先度B</span><h3>南足柄市塚原</h3></div><strong>1,480万円</strong></div><dl class="facts"><div><dt>間取り</dt><dd>4LDK</dd></div><div><dt>交通</dt><dd>塚原駅徒歩12分</dd></div><div><dt>土地</dt><dd>153m²前後</dd></div><div><dt>建物</dt><dd>92.7m²前後</dd></div><div><dt>築年月</dt><dd>2011年8月</dd></div></dl><div class="notes"><div><h4>条件次第で有力</h4><ul><li>庭付き表記あり</li><li>価格に余裕</li><li>4LDK</li></ul></div><div><h4>確認ポイント</h4><ul><li>駐車2台可否</li><li>居住中のため内見調整</li></ul></div></div><a href="https://house.goo.ne.jp/buy/uh/special/3013/area_kanagawa/14217.html" target="_blank" rel="noreferrer">元掲載を確認する（goo住宅・不動産 / LIFULL HOME’S）</a></article>
+        <article class="property rank-c"><div class="property-head"><div><span class="rank">優先度C</span><h3>開成町牛島</h3></div><strong>1,990万円</strong></div><dl class="facts"><div><dt>間取り</dt><dd>8LDK</dd></div><div><dt>交通</dt><dd>開成駅徒歩16〜17分</dd></div><div><dt>土地</dt><dd>約495m²</dd></div><div><dt>建物</dt><dd>204.12m²</dd></div><div><dt>築年月</dt><dd>1988年5月</dd></div></dl><div class="notes"><div><h4>広めに見る候補</h4><ul><li>開成町内</li><li>庭が広い</li><li>駐車2台</li></ul></div><div><h4>確認ポイント</h4><ul><li>建物が大きく維持費が重い可能性</li><li>買主条件の有無確認</li></ul></div></div><a href="https://house.goo.ne.jp/buy/uh/special/3013/area_kanagawa/14366.html" target="_blank" rel="noreferrer">元掲載を確認する（goo住宅・不動産）</a></article>
+        <article class="property rank-c"><div class="property-head"><div><span class="rank">優先度C</span><h3>山北町向原</h3></div><strong>2,000万円</strong></div><dl class="facts"><div><dt>間取り</dt><dd>4DK 平屋</dd></div><div><dt>交通</dt><dd>東山北駅徒歩6分</dd></div><div><dt>土地</dt><dd>609.88m²</dd></div><div><dt>建物</dt><dd>84.27m²</dd></div><div><dt>築年月</dt><dd>1973年4月</dd></div></dl><div class="notes"><div><h4>広めに見る候補</h4><ul><li>駅近</li><li>庭が広い</li><li>駐車3台ガレージ</li></ul></div><div><h4>確認ポイント</h4><ul><li>開成小通学との相性</li><li>現況有姿のため修繕費確認</li></ul></div></div><a href="https://house.goo.ne.jp/buy/uh/special/3013/area_kanagawa/14366.html" target="_blank" rel="noreferrer">元掲載を確認する（goo住宅・不動産）</a></article>
+      </div>
+    </section>
+    <section class="next-step">
+      <h2>次に見る順番</h2>
+      <ol>
+        <li>開成町延沢・宮台・牛島を在庫確認し、開成小との距離と駐車動線を優先確認。</li>
+        <li>南足柄市和田河原・三竹・塚原は、価格と築年数のバランスを比較。</li>
+        <li>山北町は築浅・広さの魅力がある一方、通学と生活動線を確認。</li>
+      </ol>
+    </section>
+    <footer>
+      <p>掲載情報は2026年9月2日に公開サイト上で確認した内容の要約です。成約済み・価格変更・掲載終了の可能性があります。</p>
+    </footer>
+  </main>
+</body>
+</html>
